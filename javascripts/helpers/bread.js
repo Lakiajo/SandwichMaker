@@ -1,4 +1,4 @@
-const bread = [
+const breadInfo = [
     {
         type: 'Italian',
         price: 1.50,
@@ -21,11 +21,9 @@ const bread = [
     {
         type: 'Low-Carb Lettuce Bun',
         price: 2.50,
-    },
-];
-    
+    }
+];  
 const getBread = () => {
-    return bread;
+    return breadInfo;
 };
-
-export default {getBread};
+export default { getBread };
