@@ -1,0 +1,14 @@
+body {
+    font-family: 'Open Sans', sans-serif; 
+}
+body {
+    background: url("https://raw.githubusercontent.com/Lakiajo/SandwichMaker/master/Screen%20Shot%202019-04-13%20at%2010.33.14%20AM.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
