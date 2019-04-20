@@ -1,7 +1,8 @@
+
 console.log('Lakia Jones');
 
-const init = () =>{
-    
+const init = () => {
+    buttonEvents.submitButton();
 };
 
 init();
