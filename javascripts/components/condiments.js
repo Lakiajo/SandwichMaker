@@ -1,5 +1,4 @@
 const condimentsInfo = {
-
   Mayo: 0.10,
   Mustard: 0.10,
   Ranch: 0.10,

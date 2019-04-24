@@ -12,11 +12,73 @@
 <body>
     <div class="img">
     <h2>Sandwich Maker</h2>
-    <div class="row">
-        <button id="submitButton">Order</button>
+    <div class="container">
+        <div class="row">
+        <div class="col-9 border border-dark">
+        <div id="bread" class="row flex-column mx-0">
+            <h1 class="food-title">Bread:</h1>
+            <div>
+                <input type="radio" id="italian" class="item">Italian</input>
+                <input type="radio" id="honey-oat" class="item">Honey Oat</input>
+                <input type="radio" id="rye" class="item">Rye</input>
+                <input type="radio" id="wheat" class="item">Wheat</input>
+                <input type="radio" id="sourdough" class="item">Sour Dough</input>
+                <input type="radio" id="lettuce-wich" class="item">Lettuce-Wich</input>
+            </div>
+        </div>     
+        <div id="meat" class="row flex-column mx-0">
+            <h1 class="food-title">Meat:</h1>
+            <div>
+                <input type="checkbox" id="turkey" class="item">Turkey</input>
+                <input type="checkbox" id="ham" class="item">Ham</input>
+                <input type="checkbox" id="roast beef" class="item">Roast Beef</input>
+                <input type="checkbox" id="bacon" class="item">Bacon</input>
+                <input type="checkbox" id="salami" class="item">Salami</input>
+                <input type="checkbox" id="xtra" class="item">Extra Meat</input>
+            </div>
+        </div>
+        <div id="cheese" class="row flex-column mx-0">
+            <h1 class="food-title">Cheese:</h1>
+            <div>
+                <input type="checkbox" id="whiteamerican" class="item">White American</input>
+                <input type="checkbox" id="cheddar" class="item">Cheddar</input>
+                <input type="checkbox" id="provolone" class="item">Provolone</input>
+                <input type="checkbox" id="gouda" class="item">Gouda</input>
+                <input type="checkbox" id="swiss" class="item">Swiss</input>
+            </div>
+        </div>
+        <div id="veggie" class="row flex-column mx-0">
+            <h1 class="food-title">Veggies:</h1>
+            <div>
+                <input type="checkbox" id="avocado" class="item">Avocado</input>
+                <input type="checkbox" id="lettuce" class="item">Lettuce</input>
+                <input type="checkbox" id="tomato" class="item">Tomato</input>
+                <input type="checkbox" id="cucumber" class="item">Cucumber</input>   
+                <input type="checkbox" id="peppers" class="item">Banana Peppers</input>
+                <input type="checkbox" id="jalepenos" class="item">Jalepenos</input>
+            </div>
+        </div>
+        <div id="condiment" class="row flex-column mx-0">
+            <h1 class="food-title">Condiments:</h1>
+            <div>
+                <input type="checkbox" id="mayo" class="item">Mayo</input>
+                <input type="checkbox" id="mustard" class="item">Mustard</input>
+                <input type="checkbox" id="ranch" class="item">Ranch</input>
+                <input type="checkbox" id="oilnvin" class="item">Oil and Vinegar</input>
+                <input type="checkbox" id="honeymust" class="item">Honey Mustard</input>
+                <input type="checkbox" id="cmayo" class="item">Chipotle Mayo</input>
+            </div>
+        </div>
+        <div class="mt-3">
+            <button type="button" id="orderButton" class="btn btn-success mb-3">Order</button>
+        </div>     
     </div>
-    
-   <!-- <button type="button" class="btn btn-danger">You're in Danger</button> -->
+        <div class="col-3 border border-dark">
+           <h1 class="page-title">Your order</h1><hr>
+        <div id="cart"></div>
+        </div>
+    </div>
+    </div>
    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
