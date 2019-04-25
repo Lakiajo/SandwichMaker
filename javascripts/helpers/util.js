@@ -3,18 +3,11 @@ const printToDom = (divId, textToPrint) => {
     selectedDiv.innerHTML = textToPrint;
 };
 
-let cart = [];
-
-const addToCart = (ingredient) => {
-  cart.push(ingredient);
-  cartBuilder(cart);
-};
-
-const cartBuilder = (array) => {
+const cartBuilder = (sandwich) => {
   let domString = '';
-  array.forEach((item) => {
+  sandwich.forEach((item) => {
     domString += `<div class="d-flex justify-content-between">`
-    domString += `<div>${item.type}</div>`
+    domString += `<div>${item.items}</div>`
     domString += `<div>${item.price}</div>`
     domString += `</div>`
   })
@@ -22,7 +15,7 @@ const cartBuilder = (array) => {
 };
 
 
-export default { addToCart };
+export default { cartBuilder };
   
   
   
