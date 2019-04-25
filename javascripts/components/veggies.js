@@ -3,13 +3,13 @@
   Lettuce: 0.20,
   Tomato: 0.20,
   Cucumber: 0.20,
-  Peppers: 0.20,
+  BPeppers: 0.20,
   Jalepenos: 0.20
 
 };
 
-const getVeggies = () => {
+const getVeggie = () => {
   return veggiesInfo;
 };
 
-export default { getVeggies };
+export default { getVeggie };
