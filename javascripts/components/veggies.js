@@ -8,8 +8,8 @@
 
 };
 
-const getVeggie = () => {
+const getVeggies = () => {
   return veggiesInfo;
 };
 
-export default { getVeggie };
+export default { getVeggies };

@@ -1,22 +1,31 @@
-import bread from '../components/bread.js';
+// import bread from '../components/bread.js';
+import cart from '../components/cart.js';
 import meat from '../components/meat.js';
 import cheese from '../components/cheese.js';
-import condiment from '../components/condiments.js';
+import condiments from '../components/condiments.js';
 import veggie from '../components/veggies.js';
 
-const breadInfo = document.getElementById('bread');
+const breadbtns = document.getElementsByClassName('bread-item');
 const meatInfo = document.getElementById('meat');
 const cheeseInfo = document.getElementById('cheese');
 const condimentInfo = document.getElementById('condiment');
 const veggieInfo = document.getElementById('veggie');
-const orderButton = document.getElementById('orderButton');
+// const orderButton = document.getElementById('orderButton');
 
 const orderButton = () => {
-  breadInfo.addEventListener('click', bread.getBread);
+  for(let i = 0; i < breadbtns.length; i += 1) {
+    breadbtns[i].addEventListener('click', cart.addToOrder)
+  };
+//   breadbtns.forEach((item) => {
+// item.addEventListener('click', cart.addToOrder);
+//   });
+  // breadInfo.addEventListener('click', bread.getBread);
   meatInfo.addEventListener('click', meat.getMeat);
   cheeseInfo.addEventListener('click', cheese.getCheese);
-  condimentInfo.addEventListener('click', condiment.getCondiment);
-  veggieInfo.addEventListener('click', veggie.getVeggie);
+  condimentInfo.addEventListener('click', condiments.getCondiments);
+  veggieInfo.addEventListener('click', veggie.getVeggies);
 };
+
+
 
 export default { orderButton };
